@@ -4,7 +4,7 @@ WORKDIR /app
 COPY ./app/* ./
 
 EXPOSE 81
-RUN echo $(date +"%a, %d %b %Y %T %Z") > /app/container_build_date
+RUN echo $(TZ=GMT date +"%a, %d %b %Y %T %Z") > /app/container_build_date
 
 ENTRYPOINT ["/app/entrypoint.sh"]
 CMD ["node", "/app/main.js"]
