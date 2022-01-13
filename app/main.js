@@ -13,7 +13,7 @@ http.createServer(function (request, response) {
    console.log(CONTAINER_BUILD);
    console.log(CONTAINER_START);
 
-   response.end('Container_build: ' + CONTAINER_BUILD + '\n' + 'Container_start: ' + CONTAINER_START);
+   response.end('CONTAINER_BUILD: ' + CONTAINER_BUILD + '\n' + 'CONTAINER_START: ' + CONTAINER_START);
 
 }).listen(81);
 
