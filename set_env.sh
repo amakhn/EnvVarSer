@@ -1,0 +1,4 @@
+#!/bin/sh
+export CONTAINER_BUILD=Wed Jan 12 20:53:12 +05 2022
+DATETIME=$(date)
+export CONTAINER_START=${DATETIME}
