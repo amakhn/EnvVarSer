@@ -13,19 +13,7 @@ http.createServer(function (request, response) {
    console.log(CONTAINER_BUILD);
    console.log(CONTAINER_START);
 
-   const fs1 = require('fs');
-   var data1 = fs1.readFileSync('run_timestamp', 'utf8');
-      console.log(data1);
-      var run_timestamp = data1;
-   
-   
-   const fs2 = require('fs');
-   var data2 = fs2.readFileSync('build_timestamp', 'utf8');
-      console.log(data2);
-      var build_timestamp = data2;
-   
-
-   response.end('Container_build: ' + CONTAINER_BUILD + '\n' + 'Container_start: ' + CONTAINER_START + '\n' + 'Run_timestamp: ' + run_timestamp + '\n' + 'Build_timestamp: ' + build_timestamp);
+   response.end('Container_build: ' + CONTAINER_BUILD + '\n' + 'Container_start: ' + CONTAINER_START);
 
 }).listen(81);
 

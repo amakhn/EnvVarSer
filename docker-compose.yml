@@ -4,10 +4,3 @@ services:
     build: .
     ports:
       - "81:81"
-    environment:
-      - CONTAINER_START=${date}
-#     sh -c "echo '#!/bin/sh\n' > set_env.sh &&"
-#     echo 'DATETIME=$$(date)\n' >> set_env.sh &&
-#     echo 'export DATETIME\n' >> set_env.sh &&
-#     chmod +x set_env.sh &&
-#     ./set_env.sh"
